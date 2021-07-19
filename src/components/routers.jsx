@@ -9,7 +9,7 @@ class Routers extends Component {
     laptops: [],
   };
   async componentDidMount() {
-    const { data: laptops } = await axios.get("http://127.0.0.1:8000/api/list");
+    const { data: laptops } = await axios.get("https://muni-portfolio.herokuapp.com/api/get/");
     this.setState({ laptops });
     // console.log(this.state.laptops, "api");
   }
