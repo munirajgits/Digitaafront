@@ -10,7 +10,7 @@ class ProductDetail extends Component {
   };
   async componentDidMount() {
     const { data: laptop } = await axios.get(
-      `http://127.0.0.1:8000/api/get/${this.props.match.params.id}`
+      `https://muni-portfolio.herokuapp.com/api/get/${this.props.match.params.id}/`
     );
     this.setState({ laptop });
   }
